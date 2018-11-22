@@ -1,0 +1,221 @@
+html, body, header, div, nav, main, section, footer{
+	margin:0px;
+	padding:0px;
+}
+header, nav, main, footer, section{
+	display: block;
+}
+header{
+	height: 90px;
+}
+header img{
+	margin-left: 400px;
+	margin-bottom: 0px;
+}
+body{
+	background: #ededed;
+	font-weight: 400;
+}
+.container{
+	width: 100%;
+	margin:0;
+	top: 0px;
+}
+nav{
+	float: right;
+	background:#ededed;
+	position: sticky;
+	top:0;
+	border-bottom: 3px solid black;
+}
+
+nav::after{
+	content: '';
+	display: table;
+	clear:both;
+}
+.logo{
+	float: left;
+	padding-top:40px;
+}
+
+
+nav ul{
+	margin-left: 200px;
+	padding:0;
+	list-style: none;
+	border-bottom: #222;
+}
+
+nav li{
+	display:inline-block;
+	margin-left: 120px;
+	padding-top:20px;
+	padding-bottom: 0px;
+	
+	position:relative;
+	
+}
+
+nav a{
+	color:#000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+nav a:hover{
+	color:#ff6a00;
+}
+nav a::before{
+	content:'';
+	display: block;
+	height: 4px;
+	width: 100%;
+	background-color: #ff6a00;
+	
+	position: absolute;
+	top:0;
+	width: 0%;
+	transition: all  ease-in-out 250ms;
+}
+nav a:hover::before{
+	width: 100%;
+}
+
+#thispage{
+	color: #ff6a00;
+}
+
+#musiker{
+	max-height: 200px;
+}
+#text-first-page{
+	position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	color: #ededed;
+    text-shadow: 2px 2px 4px #000000;
+	
+}
+#intro{
+	position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+	font-weight: bold;
+	
+	
+}
+#intro h2{
+	text-align: center;
+}
+
+.parallax{
+	
+	background-image:url(pics/albgreen.jpg);
+	min-height: 700px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.biografi{
+	background-image:url(pics/abstractbakgrund.jpg);
+	min-height: 700px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #ededed;
+	
+}
+
+h1,p{
+	text-align: center;
+}
+#musik{
+	width: 300px;
+    height: 600px;
+    margin:  auto;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+#bokning{
+	background-color: #ededed;
+	text-align: center;
+}
+
+legend{
+	display: none;
+}
+#kontakt{
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	border: none;
+}
+#kontakt fieldset{
+	color: #286099;
+}
+#kontakt legend{
+	font-weight: bold;
+}
+#kontakt label{
+	width: 100px;
+	text-align: left;
+	margin-top: 8px;
+}
+#kontakt input{
+	display: block;
+	margin-top: 8px;
+	margin: auto;
+}
+#text{
+	margin-top: 15px;
+	width: 258px;
+	
+}
+
+.upgifter{
+	display: block;
+	border: solid;
+}
+
+
+.kalrubrik{
+	text-transform: uppercase;
+}
+.kalkonsert{
+	text-transform: uppercase;
+	text-align: center;
+	
+
+}
+th, td {
+    border-bottom: 1px solid #000;
+	width:10%;
+	padding: 15px;
+}
+tr:hover {
+	background-color: #ff6a00;
+	}
+	
+footer{
+	
+	text-align: center;
+	background: #ededed;
+	padding: 1px;
+	border-top: 3px solid black;
+}
+.biografi p{
+	float: left;
+	text-align: center;
+	width: 40%;
+	
+	
+}
